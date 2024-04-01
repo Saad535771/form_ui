@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropfilter in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+.main{
+    background: url('./apple_clone_web/src/assets/image/MacBook/mac_book_086.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cardbox{
+    width: 180px;
+    height: 250px;
+    /* background-color: #272727fb; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    backdrop-filter: blur(40px);
+    transform: skew(17deg, 3deg);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    border-radius: 400px 10px 100px 400px;   
+background: none;
+ color: aliceblue;
+    width: 120px;
+    height: 25px;
+    font-size: 12px;
+    padding: 3px;
+}
+input:hover{
+    transform: rotate(5deg);
+    transition: 1000ms ease all;
+}
+::placeholder{
+    color:white;
+    padding-left:5px;
+    font-size: 10px;
+}
+label{
+    font-size: 12px;
+    padding: 3px;
+    font-weight: 800;
+
+}
+.btn{
+    background: linear-gradient(gray,rgb(8, 8, 8),rgb(57, 57, 129));
+    color: aliceblue;
+    margin-top: 10px;
+    border-radius: 400px 10px 100px 400px;   
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cardbox">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter your Email"> 
+            <label for="email">Password</label>
+            <input type="text" placeholder="Enter your Password">
+            <input type="submit" value="Login" class="btn">
+        </div>
+    </div>
+</body>
+</html>
